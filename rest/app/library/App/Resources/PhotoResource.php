@@ -1,0 +1,32 @@
+<?php
+
+namespace App\Resources;
+
+use PhalconRest\Api\Endpoint;
+use PhalconRest\Api\Resource;
+use App\Model\Photo;
+use App\Transformers\PhotoTransformer;
+use App\Constants\AclRoles;
+use PhalconRest\Mvc\Controllers\CrudResourceController;
+
+class PhotoResource extends Resource {
+
+    public function initialize()
+    {
+        $this
+            ->name('Photo')
+            ->model(Photo::class)
+            ->expectsJsonData()
+            ->transformer(PhotoTransformer::class)
+            ->itemKey('photo')
+            ->collectionKey('photos')
+            ->deny(AclRoles::UNAUTHORIZED)
+            ->handler(CrudResourceController::class)
+
+            ->endpoint(Endpoint::all())
+            ->endpoint(Endpoint::create())
+            ->endpoint(Endpoint::find())
+            ->endpoint(Endpoint::update())
+            ->endpoint(Endpoint::remove());
+    }
+}

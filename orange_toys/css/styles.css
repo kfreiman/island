@@ -1,0 +1,246 @@
+/* цвет ссылок и кнопок fa8c1b*/
+
+body {
+    color: #534850;
+}
+a {
+    color: #534850;
+}
+.nav > li.active, .nav > li.active a {
+    color: #fa8c1b;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: underline;
+    background: none;
+}
+.we-social:hover {
+    text-decoration: none !important;
+}
+.we-social {
+    display: inline-block;
+    float: none;
+    margin: 60px 10px 0px 15px;
+}
+.we-social > .fa {
+    font-size: 28px;
+    color: #bdb6ba;
+    border: 2px dashed #bdb6ba;
+    padding: 8px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    line-height: 24px;
+}
+.we-social .fa-youtube-play {
+    padding-left: 7px;
+}
+.we-social .fa-facebook {
+    padding-left: 10px;
+}
+.we-social .fa-instagram {
+    padding-left: 8px;
+}
+.we-social .fa-vk {
+    padding-left: 4px;
+}
+
+.fa-red {
+    color: #fa8c1b;
+    font-size: 20px;
+}
+
+.logo{
+    margin-top: -10px;
+    max-height: 140px;
+}
+.slider {
+    max-height: 130px;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.slider .slide {
+    padding: 8px;
+    max-height: inherit;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.modal-fullscreen {
+    text-align: center;
+}
+
+.modal-fullscreen {
+    background: transparent;
+}
+
+.modal-fullscreen .modal-content {
+    background: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.modal-backdrop.modal-backdrop-fullscreen {
+    background: #ffffff;
+}
+
+.modal-backdrop.modal-backdrop-fullscreen.in {
+    opacity: .95;
+    filter: alpha(opacity=95);
+}
+
+
+.modal-fullscreen .modal-dialog {
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+.modal.fade {
+    opacity: 1;
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    transform: translate(0);
+}
+
+.table__input {
+    width: 60px;
+    background: transparent;
+    border: 1px solid #999;
+}
+
+
+.other-slider {
+    white-space: nowrap;
+    width: 940px;
+    max-width: 100%;
+    display: inline-block;
+    /*margin-right: 100px;*/
+    /*margin-left: 100px;*/
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.other-slider .slide {
+    max-height: inherit;
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+}
+.other-slider .slide img {
+    max-height: 300px;
+    min-height: 300px;
+}
+
+/*Film*/
+.film {
+    height: 380px;
+    background-image: url(boy2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #c1b374;
+}
+.film__bigtext {
+    font-size: 40px;
+    color: #fff;
+}
+.film__hugetext{
+    font-size: 50px;
+    color: #fff;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+.film__promo-wrapper{
+    height: 380px;
+    vertical-align: middle;
+}
+
+/*Цветные скроллбары*/
+.colorscroll::-webkit-scrollbar {
+    height: 10px;
+}
+.colorscroll::-webkit-scrollbar-track {
+    border-bottom: 1px solid #fa8c1b;
+}
+.colorscroll::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #fa8c1b;
+}
+
+/*btns*/
+.btn-primary{
+    text-transform: uppercase;
+    background-color: #fa8c1b;
+    border-color: #f17d04;
+    box-shadow: 1px 1px 3px #ccc;
+    color: #fff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #e67a09;
+    border-color: #e67a09;
+}
+
+/*Footer*/
+.footer a{
+    display: block;
+}
+.footer-header {
+}
+.bottom {
+    padding: 30px 0;
+}
+
+/* helpers */
+.bg-gray {
+    background-color: #eee;
+}
+.bg-blue {
+    background-color: #a2e9ed;
+}
+.uc {
+    text-transform: uppercase;
+}
+
+/* 5 Columns */
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+    .col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
